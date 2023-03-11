@@ -19,11 +19,18 @@ export default {
   methods: {
     login() {
       this.isAuth = true
-      this.$router.replace('/dashboard')
+      if (this.$route.query.page){
+        this.$router.replace({name: this.$route.query.page})
+      } else {
+        this.$router.replace({name: 'dashboard'})
+      }
     },
     logout() {
       this.isAuth = false
-      this.$router.replace('/login')
+      this.$router.replace({
+        name: 'login',
+        query: {page: this.$route.name}
+      })
     },
 
   },

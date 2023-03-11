@@ -11,6 +11,8 @@ export default createRouter({
     { path: '/forget', name: 'forget', component: Forget},
     { path: '/dashboard', name: 'dashboard', component: Dashboard},
     { path: '/mail', name: 'mail', component: Mail},
-  ]
+  ],
+  linkActiveClass:'active',
+  linkExactActiveClass: 'active'
 })
 
