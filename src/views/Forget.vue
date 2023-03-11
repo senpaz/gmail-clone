@@ -2,6 +2,8 @@
   <div class="card">
     <h2>Забыл пароль? Так вспоминай!</h2>
 
-    <button class="btn" >Обратно к логину</button>
+      <router-link :to="{name: 'login'}">
+        <button class="btn">Обратно к логину</button>
+      </router-link>
   </div>
 </template>
