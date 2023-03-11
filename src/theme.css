@@ -220,7 +220,8 @@ h3 {
 }
 
 .list-item {
-    display: flex;
+    display: block;
+    flex-grow: 1;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 0;
